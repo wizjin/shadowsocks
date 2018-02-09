@@ -1,6 +1,6 @@
 FROM wizjin/gobuild:latest as builder
 
-RUN \
+RUN echo build shadowsocks \
   && CGO_ENABLED=0 go get github.com/shadowsocks/shadowsocks-go/cmd/shadowsocks-server \
   && CGO_ENABLED=0 go get github.com/shadowsocks/shadowsocks-go/cmd/shadowsocks-local
 
